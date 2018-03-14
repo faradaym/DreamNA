@@ -1,13 +1,69 @@
 body {
-  padding: 50px;
+  margin: 0;
+  height: 100vh;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: url("/img/Dreamna.jpg") center center fixed;
+
+}
+
+#drop-shadow {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.animate-opacity {
+  animation: opac 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opac {
+  from{opacity:0} to{opacity:0.4}
 }
 
 a {
   color: #00B7FF;
 }
 
-#question1 {
+.center {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.horizontal-center-buttons button {
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.modal {
   display: none;
+  background-color: rgba(96, 96, 96, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  z-index: 10;
+}
+
+#modal-question-1 button,
+#modal-question-2 button,
+#modal-question-3 button {
+  display: block;
+}
+
+#modal-question-1 button {
+  width: 139px;
+}
+
+#modal-question-2 button {
+  width: 94px;
+}
+
+#modal-question-3 button {
+  width: 162px;
 }
