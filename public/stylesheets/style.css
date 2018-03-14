@@ -4,6 +4,15 @@
   /* background: url("/img/Dreamna.jpg") center center fixed; */
 /* } */
 
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
 a {
   color: #00B7FF;
 }
@@ -11,9 +20,12 @@ a {
 #demo-player {
   width: 100vw;
   height: calc( 100vw * (9/16) );
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #question1 {
