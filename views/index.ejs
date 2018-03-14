@@ -2,10 +2,46 @@
 <html>
   <head>
     <title><%= title %></title>
+
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" /-->
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <video
+      id="demo-player"
+      autoplay loop controls
+      class="cld-video-player"
+      crossorigin="anonymous">
+    </video>
+
+    <!-- <h1><%= title %></h1> -->
+    <!-- <p>Welcome to <%= title %></p> -->
+    <!-- <button id="button">Button</button> -->
+
+    <!-- <div id="container"> -->
+      <!-- <div id="question1"> -->
+        <!-- How are you feeling?<br /> -->
+        <!-- <form> -->
+          <!-- <select> -->
+            <!-- <option value="volvo">Volvo</option> -->
+            <!-- <option value="saab">Saab</option> -->
+            <!-- <option value="mercedes">Mercedes</option> -->
+            <!-- <option value="audi">Audi</option> -->
+          <!-- </select> -->
+
+          <!-- <input id="gen-dream" type="submit" value="Generate Dream" /> -->
+        <!-- </form> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="application/javascript"></script>
+
+    <!-- Cloudinary -->
+    <script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js" type="application/javascript"></script>
+    <script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.js" type="application/javascript"></script>
+    <script src="https://rawgit.com/yanwsh/videojs-panorama/master/dist/videojs-panorama.v5.js" type="application/javascript"></script>
+
+    <script src="/js/index.js" type="application/javascript"></script>
   </body>
 </html>
