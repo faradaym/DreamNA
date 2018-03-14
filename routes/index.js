@@ -5,5 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'DreamNA' });
 });
+router.get('/video', function(req, res, next) {
+  res.render('video', {});
+});
 
 module.exports = router;
